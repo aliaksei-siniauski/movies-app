@@ -1,6 +1,6 @@
 # Movie-app project
 
-[movie-app](https://aliaksei-siniauski.github.io/collor-flipper/)
+[movie-app](https://aliaksei-siniauski.github.io/movies-app/)
 
 ![movies-app](https://snipboard.io/HLe4rl.jpg)
 
