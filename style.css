@@ -1,0 +1,255 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"],
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section,
+main,
+footer,
+header,
+article {
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Basic */
+
+body {
+  background: #131720;
+  font-family: "Verdana", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+/* Header */
+
+.header {
+  overflow: hidden;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.active {
+  font-size: 2vh;
+  line-height: 2rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#form {
+  width: 300px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  background: #151f30;
+  border-radius: 1rem;
+}
+
+#query {
+  all: unset;
+  font: 15px system-ui;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.9rem;
+}
+
+#query:focus {
+  color: #ffffff;
+}
+
+/* Section */
+
+.movies {
+  padding: 2rem 0 4rem 0;
+}
+
+.movies__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.collumn {
+  display: flex;
+  position: relative;
+}
+
+.row {
+  width: fit-content;
+}
+.row:hover {
+  cursor: pointer;
+}
+.row:hover .overlay {
+  opacity: 1;
+  transition: opacity ease-in-out 1s;
+}
+.row:hover .overview {
+  z-index: 100;
+  transform: translateY(-300px);
+  background: #1e1515;
+  color: #ffffff;
+}
+
+.card {
+  min-height: auto;
+  background: #151f30;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card__img {
+  width: 300px;
+  height: 400px;
+  border-radius: 1.5rem;
+}
+
+.movie-title {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-size: 3vh;
+}
+
+.overview {
+  margin-top: 2rem;
+  color: #ecd3cc;
+  font-size: 2vh;
+  text-align: justify;
+  transition: transform 2s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  border-radius: 1.5rem;
+}
+
+.card__content {
+  border: 0;
+  border-radius: 0;
+  z-index: 10;
+  transform: translateY(-86px);
+  background: #1e1515;
+}
+
+/* media */
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+
+  .search-container {
+    width: 50%;
+  }
+
+  #form {
+    width: 80%;
+  }
+}
