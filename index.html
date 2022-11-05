@@ -9,7 +9,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="container">
+        <nav class="nav header__nav">
+          <a class="active" href="index.html">Movies Site</a>
+          <div class="search-container">
+            <form id="form" role="search" action="#">
+              <input
+                id="query"
+                name="q"
+                type="search"
+                placeholder="Search..."
+              />
+            </form>
+          </div>
+        </nav>
+        <!-- search-container -->
+      </div>
     </header>
     <main>
       <section class="movies">
@@ -17,4 +32,5 @@
       </section>
     </main>
   </body>
+  <script src="index.js"></script>
 </html>
