@@ -7,5 +7,30 @@
     <title>Movies app</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav header__nav">
+          <a class="active" href="index.html">Movies Site</a>
+          <div class="search-container">
+            <form id="form" role="search" action="#">
+              <input
+                id="query"
+                name="q"
+                type="search"
+                placeholder="Search..."
+              />
+            </form>
+          </div>
+        </nav>
+        <!-- search-container -->
+      </div>
+    </header>
+    <main>
+      <section class="movies">
+        <div class="container movies__container"></div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
 </html>
