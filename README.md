@@ -20,6 +20,7 @@ A simple movie app with Vanilla JavaScript
 - rendering the movie list
 - showing a list of movies with images and titles
 - searching for any movie it will show you the movie name with the image 
+- showing movie description
 - all the necessary elements are generated with the usage of JS
 
 ## Techs:
