@@ -18,7 +18,8 @@ A simple movie app with Vanilla JavaScript
 ## Features:
 
 - rendering the movie list
-- showing the most popular movies
+- showing a list of movies with images and titles
+- searching for any movie it will show you the movie name with the image 
 - all the necessary elements are generated with the usage of JS
 
 ## Techs:
